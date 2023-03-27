@@ -17,6 +17,7 @@ pub fn run(num: i32) -> String {
     );
 
     println!("Converting: {}", num.to_string());
+    
     for key in values_map.keys() {
         let value = values_map.get(key);
         println!("{} | {}", key, value.unwrap());
