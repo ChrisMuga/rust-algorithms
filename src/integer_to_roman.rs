@@ -16,10 +16,13 @@ pub fn run(num: i32) -> String {
         ]
     );
 
+    println!("Converting: {}", num.to_string());
     for key in values_map.keys() {
-        println!("{}", key);
+        let value = values_map.get(key);
+        println!("{} | {}", key, value.unwrap());
     }
 
-    println!("Integer to roman :{}", num);
+    
+
     return "XXX".to_string();
 }
